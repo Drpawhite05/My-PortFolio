@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+    }
+    header .brand {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 16px;
+    }
+    nav a:hover {
+      text-decoration: underline;
+      font-style: italic;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px;
+    }
+    .about img {
+      width: 150px;
+      border-radius: 50%;
+    }
+    .recommendations ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+    #newRec {
+      padding: 5px;
+      font-size: 14px;
+    }
+    button {
+      padding: 6px 12px;
+      font-size: 14px;
+      margin-left: 5px;
+      cursor: pointer;
+    }
+  </style>
+<link type="text/css" rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+  <header>
+    <div class="brand">Ann Style</div>
+    <nav>
+      <a href="#about"><b>⌂ Home</b></a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#recommendations">Recommendations</a>
+    </nav>
+  </header>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+
+     <blockquote class="imgur-embed-pub" lang="en" data-id="a/HSJywMS" data-context="false">
+    <a href="//imgur.com/a/HSJywMS">View Imgur Album</a>
+  </blockquote>
+  <script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+    <p>Hello! I'm Ann, a passionate beginner developer skilled in HTML somewhat but learning front-end technologies. I have enjoyed the journey so far. In my past, I was good at creating web pages and using JavaScript, but like they say if you don't use it, you will lose it. Now I am learning how to create clean and responsive designs, CSS, JS all over again.</p>
+  </section>
+
+  <section id="skills">
+  <h2>Skills</h2>
+  <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+    <div style="border: 1px solid #ccc; padding: 15px; border-radius: 8px; background: white; width: 160px; text-align: center;">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" style="width: 40px;"><br>
+      <strong>HTML</strong><br>
+      2 yrs experience
+    </div>
+    <div style="border: 1px solid #ccc; padding: 15px; border-radius: 8px; background: white; width: 160px; text-align: center;">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" style="width: 40px;"><br>
+      <strong>CSS</strong><br>
+      1 yr experience
+    </div>
+    <div style="border: 1px solid #ccc; padding: 15px; border-radius: 8px; background: white; width: 160px; text-align: center;">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" style="width: 40px;"><br>
+      <strong>JavaScript</strong><br>
+      3 yrs experience
+    </div>
+    <div style="border: 1px solid #ccc; padding: 15px; border-radius: 8px; background: white; width: 160px; text-align: center;">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL" style="width: 40px;"><br>
+      <strong>SQL</strong><br>
+      2 yrs experience
+    </div>
+    <div style="border: 1px solid #ccc; padding: 15px; border-radius: 8px; background: white; width: 160px; text-align: center;">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" style="width: 40px;"><br>
+      <strong>Python</strong><br>
+      1 yr experience
+    </div>
+  </div>
+</section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>Portfolio Website:</strong> A personal website showcasing my bio, skills, and projects.</li>
+    <li><strong>Task Manager App:</strong> A simple to-do app to manage daily tasks and priorities.</li>
+    <li><strong>Weather Dashboard:</strong> A web app that shows real-time weather based on city input using an API.</li>
+    </ul>
+  </section>
+
+  <section id="recommendations" class="recommendations">
+  <h2 style="color: red; font-weight: bold;">Recommendations</h2>
+
+  <div style="border: 2px solid #ccc; padding: 15px; border-radius: 8px; background-color: #fff;">
+    <ul id="rec-list" style="list-style-type: disc; margin-left: 20px;">
+      <li>"Ann has shown tremendous growth in a short span of time. Her eagerness to learn, openness to feedback, and ability to quickly pick up new skills make her an excellent fit for fast-paced and dynamic teams."</li>
+      <li>"Despite being early in her career, Ann has already demonstrated strong initiative and a results-driven mindset. She consistently go beyond expectations, making her a standout candidate among entry-level professionals."
+</li>
+      <li>"Ann brings a strong foundation in Python programming, HTML, CSS, & JavaScript coding, & SQL skills along with exceptional communication and teamwork abilities. Her professionalism and willingness to take on challenges make her a valuable asset to any organization."</li>
+    </ul>
+
+    <textarea id="newRec" rows="4" cols="50" placeholder="Leave your recommendation here..." style="margin-top: 15px; width: 100%; padding: 8px; font-size: 14px;"></textarea>
+    <br />
+    <button onclick="addRecommendation()" style="margin-top: 10px; padding: 8px 16px; font-size: 14px; cursor: pointer;">
+      Submit
+    </button>
+  </div>
+</section>
+
+  <script>
+  function addRecommendation() {
+    const input = document.getElementById('newRec');
+    const newRec = input.value.trim();
+    if (newRec) {
+      const li = document.createElement('li');
+      li.textContent = newRec;
+      document.getElementById('rec-list').appendChild(li);
+      alert("Thank you! Your recommendation has been added.");
+      input.value = '';
+    } else {
+      alert("Please write a recommendation before submitting.");
+    }
+  }
+</script>
+
+
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
